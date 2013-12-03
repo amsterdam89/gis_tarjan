@@ -23,8 +23,6 @@ void FileReader::openFile(){
 
 		loadFile >> size;
 		setMatrix(&loadFile);
-
-
 		loadFile.close();
 	}
 }
