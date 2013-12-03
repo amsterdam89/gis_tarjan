@@ -32,8 +32,12 @@ class FileReader
 	void saveFile();
 	void setMatrix(ifstream *loadFile);
 
+
 	public:
+	void showMatrix(string s);
+
 	FileReader(string openFilePath = "/home/amsterdam/workspace/gis_file.txt", string saveFilePath = "/home/amsterdam/workspace/gis.txt");
+	~FileReader();
 
 };
 

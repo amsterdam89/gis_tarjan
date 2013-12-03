@@ -15,6 +15,14 @@ saveFilePath(saveFilePath)
 	//saveFile();
 }
 
+FileReader::~FileReader() {
+
+	cout << "wyczyść zalokowana macierz" << endl;
+	for (int i = 0; i < size; i++)
+    	delete matrix[i];
+	delete matrix;
+}
+
 void FileReader::openFile(){
 
 	ifstream loadFile;
@@ -31,7 +39,7 @@ void  FileReader::saveFile(){
 
     ofstream saveFile (saveFilePath.c_str());
 
-    saveFile << "Zadanie rozwiązane pomyślnie przez algorytm " <<endl;
+    saveFile << "Zadanie rozwiązane pomyślnie przez algorytm " << endl;
 	for(int i = 0; i < size; i++) {
 		for(int j = 0; j < size; j++)
 			saveFile << matrix[i][j] << " ";
@@ -50,5 +58,15 @@ void FileReader::setMatrix(ifstream *loadFile) {
 	for(int i = 0; i < size; i++)
 		for(int j = 0; j < size; j++)
 			*loadFile >> matrix[i][j];
+}
+
+void FileReader::showMatrix(string s) {
+
+	cout << "wartosc macierzy " << s << endl;
+	for(int i=0; i < size; i++) {
+		for(int j=0; j < size; j++)
+			cout << "\t" << matrix[i][j];
+		cout << endl;
+		}
 }
 

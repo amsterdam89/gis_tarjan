@@ -14,7 +14,9 @@ int main() {
 	cout << "projekt gis" << endl; // prints !!!Hello World!!!
 
 	FileReader *f = new FileReader();
+	f->showMatrix("macierz test");
 	delete f;
+
 
 	return 0;
 }
