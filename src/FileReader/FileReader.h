@@ -35,6 +35,8 @@ class FileReader
 
 	public:
 	void showMatrix(string s);
+	double ***getMatrix();
+	int getSize();
 
 	FileReader(string openFilePath = "/home/amsterdam/workspace/gis_file.txt", string saveFilePath = "/home/amsterdam/workspace/gis.txt");
 	~FileReader();

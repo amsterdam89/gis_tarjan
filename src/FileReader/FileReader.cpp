@@ -70,3 +70,12 @@ void FileReader::showMatrix(string s) {
 		}
 }
 
+double ***FileReader::getMatrix() {
+
+	return &matrix;
+}
+int FileReader::getSize() {
+
+	return size;
+}
+
