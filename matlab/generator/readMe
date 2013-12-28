@@ -1,0 +1,13 @@
+uruchamiane przez - graphSaveToFile
+
+obowiązkowo jako pierwszy argument opcja generacji grafu.
+
+kolejne argumenty to:
+ścieżka w której będziemy zapisywać powstałe pliki.
+ilość generowanych grafuów.
+liczba wierzchołków.
+liczba krawędzi, nie w każdej opcji jest używana.
+
+przykład uruchomienia:
+
+graphSaveToFile(1)
