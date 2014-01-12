@@ -12,7 +12,7 @@ if nargin < 2
   pathFile = 'matrix_';
 end
 
-if nargin < 4
+if nargin < 3
   count = 1;
 end
 
